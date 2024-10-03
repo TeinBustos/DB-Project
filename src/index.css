@@ -107,8 +107,7 @@ h1 {
 
   transition: 0.3s;
   border-radius: 50px; /* Esquinas redondeadas */
-  overflow:hidden;
-  min-height: 700px;
+  min-height: 400px;
   max-height: 700px;
   transition: transform 0.3s ease;
 }
@@ -119,11 +118,24 @@ h1 {
 }
 
 .container {
+  height: 200px;
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;
   color: #1a1a1a;
-  font-size:small;
+  font-size:medium;
+  overflow-y: auto;
+}
+
+
+.container::-webkit-scrollbar {
+  background-color: rgb(255, 153, 0);
+  border-radius: 50px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 81, 0);
+  border-radius: 50px;
 }
 
 img {
